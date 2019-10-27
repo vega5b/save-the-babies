@@ -13,3 +13,9 @@ Read them into python:
 
 
 ![](assets/ctu_uhb_1.png)
+
+## Convert pdf's to individual pngs
+
+`brew install ghostscript`
+ 
+`gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=myData/page%03d.png myData.pdf`
