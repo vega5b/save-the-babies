@@ -22,7 +22,7 @@ Read them into python:
 
 (you may need to type `quit` once the GS prompt is returned)
 
-## Clip out part of a png and use the same bounds for all additional pngs
+## Clip out part of a png and use the same crop bounds for all additional pngs in a path
 
 `python clip_bounds.py --file myData/page0004.png --path myData/`
 
