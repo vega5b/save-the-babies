@@ -21,3 +21,10 @@ Read them into python:
 `gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=myData/page%03d.png myData.pdf`
 
 (you may need to type `quit` once the GS prompt is returned)
+
+## Clip out part of a png and use the same bounds for all additional pngs
+
+`python clip_bounds.py --file myData/page0004.png --path myData/`
+
+When the image is displayed, the mouse is used to interact with the region of interest. Click on the top left and hold/darg to bottom right. Release. Press 'c' if oyu want to crop the window. Press 'r' to redo. Everything in the `--path` will be corpped accordingly to the same window.
+
