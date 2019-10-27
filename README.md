@@ -28,3 +28,4 @@ Read them into python:
 
 When the image is displayed, the mouse is used to interact with the region of interest. Click on the top left and hold/darg to bottom right. Release. Press 'c' if oyu want to crop the window. Press 'r' to redo. Everything in the `--path` will be corpped accordingly to the same window.
 
+Output cropped images are stored in `myData/clipped/` (or whatever your specified top level path is above).
