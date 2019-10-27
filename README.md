@@ -19,3 +19,5 @@ Read them into python:
 `brew install ghostscript`
  
 `gs -dNOPAUSE -sDEVICE=png16m -r256 -sOutputFile=myData/page%03d.png myData.pdf`
+
+(you may need to type `quit` once the GS prompt is returned)
