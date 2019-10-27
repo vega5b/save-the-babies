@@ -9,10 +9,7 @@ Get the wavefrm data from the physionet archive:
 
 Read them into python:
 
-```python
-python read_physionet.py --files physiobank/database/ctu-uhb-ctgdb/ --title 1001
-
-```
+`python read_physionet.py --files physiobank/database/ctu-uhb-ctgdb/ --title 1001`
 
 
 ![](assets/ctu_uhb_1.png)
