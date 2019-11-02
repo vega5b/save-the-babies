@@ -74,4 +74,4 @@ for i in glob.glob(args.path+'*png'):
 	if not os.path.exists(args.path+'clip/'):
 		os.mkdir(args.path+'clip/')
 	cv2.imwrite(args.path+'clip/'+basename+'.png',clipim)
-
+	os.system('rm '+args.path+'*png')
