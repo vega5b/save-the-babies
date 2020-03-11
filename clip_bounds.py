@@ -8,6 +8,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--file',help='page converted to png from original pdf, e.g. myData/page004.png')  
 parser.add_argument('--path',help='path to convereted pngs, e.g. myData/')  
+parser.add_argument('--output',help='output path for clipped images')  
+
 args = parser.parse_args()
 
 
@@ -71,7 +73,7 @@ for i in glob.glob(args.path+'*png'):
 	basename = os.path.basename(filename_zero)
 	image=cv2.imread(i)
 	clipim=image[refPt[0][1]:refPt[1][1], refPt[0][0]:refPt[1][0]]
-	if not os.path.exists(args.path+'clip/'):
-		os.mkdir(args.path+'clip/')
-	cv2.imwrite(args.path+'clip/'+basename+'.png',clipim)
-	os.system('rm '+args.path+'*png')
+	if not os.path.exists(args.output):
+		os.mkdir(args.output)
+	cv2.imwrite(args.output+basename+'.png',clipim)
+	#os.system('rm '+args.path+'*png')
